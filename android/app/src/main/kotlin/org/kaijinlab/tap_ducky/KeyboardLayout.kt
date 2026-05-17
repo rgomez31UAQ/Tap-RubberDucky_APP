@@ -60,9 +60,8 @@ class KeyboardMapper(private val layout: Int) {
 
     private companion object {
         const val MOD_NONE = 0x00
-        const val MOD_LCTRL = 0x01
         const val MOD_LSHIFT = 0x02
-        const val MOD_RALT = MOD_LCTRL or 0x40
+        const val MOD_RALT = 0x40
         const val MOD_SHIFT_RALT = MOD_LSHIFT or MOD_RALT
 
         private val WINDOWS_PUNCTUATION_OVERRIDES = mapOf(
